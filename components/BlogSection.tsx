@@ -7,16 +7,21 @@ const articles = [
     title: "El problema financiero rara vez es solo matemático.",
     description:
       "Por qué muchas personas siguen sintiendo fragilidad financiera incluso aumentando sus ingresos.",
+    slug: "problema-financiero-no-es-matematico",
   },
+
   {
     title: "Primero diseñamos la vida. Después el sistema financiero.",
     description:
       "La estabilidad financiera comienza mucho antes del ahorro o la inversión.",
+    slug: "primero-la-vida-despues-el-sistema-financiero",
   },
+
   {
     title: "La relación entre agotamiento mental y desorden financiero.",
     description:
       "Cómo el cansancio emocional impacta directamente en las decisiones económicas.",
+    slug: "agotamiento-mental-y-desorden-financiero",
   },
 ];
 
@@ -59,17 +64,18 @@ export default function BlogSection() {
 
           {articles.map((article, index) => (
 
-            <motion.div
+            <motion.a
+              href={`/blog/${article.slug}`}
               key={index}
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                duration: 0.8,
-                delay: index * 0.15,
-              }}
-              viewport={{ once: true }}
-              className="border border-white/10 rounded-[2rem] p-8 bg-white/[0.02] backdrop-blur-sm hover:border-[#C6A972]/30 transition group cursor-pointer"
-            >
+               duration: 0.8,
+              delay: index * 0.15,
+            }}
+            viewport={{ once: true }}
+            className="border border-white/10 rounded-[2rem] p-8 bg-white/[0.02] backdrop-blur-sm hover:border-[#C6A972]/30 transition group cursor-pointer block"
+          >
 
               <div className="mb-10">
 
@@ -91,7 +97,7 @@ export default function BlogSection() {
                 Leer artículo
               </div>
 
-            </motion.div>
+            </motion.a>
 
           ))}
 
