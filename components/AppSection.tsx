@@ -32,7 +32,7 @@ export default function AppSection() {
       setEmail("");
 
       // DESCARGA AUTOMÁTICA
-      window.location.href = "/finanzas-dapa-demo.exe";
+      window.location.href = "/finanzas-dapa-demo.zip";
     }
 
     setLoading(false);
@@ -106,11 +106,19 @@ export default function AppSection() {
           <div className="border border-white/10 rounded-[2rem] p-8 bg-white/[0.02] backdrop-blur-sm">
 
             <h3 className="text-2xl font-light mb-4">
-              Descargar versión DEMO
+              Descargar Demo para Windows gratis
             </h3>
+            <p className="text-sm text-gray-600 mb-6">
+              Windows · .zip · 45 MB
+            </p>
 
             <p className="text-gray-500 mb-6">
               Ingresa tu correo electrónico para acceder a la descarga.
+            </p>
+            <p className="text-xs text-gray-600 leading-relaxed mb-6">
+              La aplicación puede mostrar una advertencia inicial de Windows SmartScreen
+              porque aún no posee firma digital certificada. Esto es normal en versiones
+              independientes distribuidas directamente desde el sitio oficial.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
