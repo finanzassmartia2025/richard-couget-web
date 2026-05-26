@@ -69,10 +69,6 @@ export default function BookSection() {
               Comprar en Amazon
             </a>
 
-            <button className="border border-white/20 px-8 py-4 rounded-full hover:bg-white hover:text-black transition">
-              Leer más
-            </button>
-
           </div>
 
         </motion.div>

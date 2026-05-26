@@ -39,7 +39,13 @@ export default function HeroSection() {
               whileTap={{ scale: 0.98 }}
               className="bg-[#C6A972] text-black px-8 py-4 rounded-full font-medium"
             >
-              Comprar Libro
+              <a
+                href="https://www.amazon.com/dp/B0GT4VRYXX"
+                target="_blank"
+                className="bg-[#C6A972] text-black px-8 py-4 rounded-full text-sm tracking-wide hover:opacity-90 transition"
+              >
+              Comprar libro
+              </a>
             </motion.button>
 
             <motion.button
@@ -47,7 +53,12 @@ export default function HeroSection() {
               whileTap={{ scale: 0.98 }}
               className="border border-white/20 px-8 py-4 rounded-full hover:bg-white hover:text-black transition"
             >
-              Descargar App
+              <a
+                href="#app"
+                className="border border-white/20 px-8 py-4 rounded-full text-sm tracking-wide hover:bg-white hover:text-black transition"
+              >
+              Descargar app
+              </a>
             </motion.button>
 
           </div>

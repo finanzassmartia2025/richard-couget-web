@@ -1,8 +1,40 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useState } from "react";
+import { supabase } from "@/lib/supabase";
 
 export default function FooterSection() {
+
+  const [email, setEmail] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [message, setMessage] = useState("");
+
+  async function handleNewsletter() {
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!emailRegex.test(email)) {
+      setMessage("Por favor ingresa un correo válido.");
+      return;
+    }
+
+    setLoading(true);
+
+    const { error } = await supabase
+      .from("newsletter")
+      .insert([{ email }]);
+
+    if (error) {
+      setMessage("Ocurrió un error. Inténtalo nuevamente.");
+    } else {
+      setMessage("¡Suscripción completada!");
+      setEmail("");
+    }
+
+    setLoading(false);
+  }
+
   return (
     <footer className="py-32 px-8 border-t border-white/5">
 
@@ -37,14 +69,26 @@ export default function FooterSection() {
             <input
               type="email"
               placeholder="Tu correo electrónico"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               className="flex-1 bg-black border border-white/10 rounded-full px-6 py-4 text-white outline-none"
             />
 
-            <button className="bg-[#C6A972] text-black px-8 py-4 rounded-full font-medium hover:opacity-90 transition">
-              Suscribirme
+            <button
+              onClick={handleNewsletter}
+              disabled={loading}
+              className="bg-[#C6A972] text-black px-8 py-4 rounded-full font-medium hover:opacity-90 transition disabled:opacity-50"
+            >
+              {loading ? "Procesando..." : "Suscribirme"}
             </button>
 
           </div>
+
+          {message && (
+            <p className="text-sm text-gray-400 mt-6">
+              {message}
+            </p>
+          )}
 
         </motion.div>
 
@@ -75,27 +119,27 @@ export default function FooterSection() {
 
             <div className="flex flex-col gap-4 text-gray-500">
 
-              <a href="#" className="hover:text-white transition">
+              <a href="#home" className="hover:text-white transition">
                 Inicio
               </a>
 
-              <a href="#" className="hover:text-white transition">
+              <a href="#about" className="hover:text-white transition">
                 Sobre mí
               </a>
 
-              <a href="#" className="hover:text-white transition">
+              <a href="#method" className="hover:text-white transition">
                 Método DAPA
               </a>
 
-              <a href="#" className="hover:text-white transition">
+              <a href="#book" className="hover:text-white transition">
                 Libro
               </a>
 
-              <a href="#" className="hover:text-white transition">
+              <a href="#app" className="hover:text-white transition">
                 App
               </a>
 
-              <a href="#" className="hover:text-white transition">
+              <a href="#blog" className="hover:text-white transition">
                 Blog
               </a>
 
@@ -116,7 +160,7 @@ export default function FooterSection() {
                 href="mailto:finanzassmartia2025@gmail.com"
                 className="hover:text-white transition"
               >
-                Correo
+                finanzassmartia2025@gmail.com
               </a>
 
               <a

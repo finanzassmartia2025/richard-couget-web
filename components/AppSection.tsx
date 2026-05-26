@@ -12,8 +12,10 @@ export default function AppSection() {
 
   async function handleSubmit() {
 
-    if (!email) {
-      setMessage("Por favor ingresa un correo válido.");
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!emailRegex.test(email)) {
+      setMessage("Por favor ingresa un correo electrónico válido.");
       return;
     }
 
