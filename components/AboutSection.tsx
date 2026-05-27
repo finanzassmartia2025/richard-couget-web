@@ -24,7 +24,7 @@ export default function AboutSection() {
             Sobre Richard
           </p>
 
-          <h2 className="text-4xl md:text-6xl font-light leading-tight max-w-4xl">
+          <h2 className="text-5xl md:text-6xl font-light leading-tight max-w-4xl">
             Una visión estructural
             <br />
             de las finanzas personales.
@@ -33,7 +33,7 @@ export default function AboutSection() {
         </motion.div>
 
         {/* CONTENIDO */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
+        <div className="grid grid-cols-1 md:grid-cols-[1.20fr_0.80fr] gap-20">
 
           {/* TEXTO IZQUIERDA */}
           <motion.div
@@ -44,22 +44,27 @@ export default function AboutSection() {
           >
 
             <p className="text-gray-300 leading-relaxed text-lg mb-8">
-              Richard Couget desarrolla un enfoque sobre las finanzas personales
-              centrado en la estructura, la claridad y el diseño consciente
-              del estilo de vida.
+              Durante años observé que muchos de los problemas financieros
+              de las personas no nacían realmente del dinero.
             </p>
 
             <p className="text-gray-500 leading-relaxed mb-8">
-              Su trabajo combina educación financiera,
-              psicología del dinero y pensamiento estructural
-              para ayudar a las personas a construir estabilidad financiera
-              sostenible en el largo plazo.
+              Nacían del agotamiento mental, de la desorganización estructural,
+              de la presión constante y de la dificultad de sostener decisiones
+              en medio del caos cotidiano.
+            </p>
+
+            <p className="text-gray-500 leading-relaxed mb-8">
+              Con el tiempo entendí que las finanzas personales no podían abordarse
+              únicamente desde números, presupuestos o fórmulas matemáticas.
+              Detrás de cada decisión financiera existe una estructura emocional,
+              mental y humana mucho más profunda.
             </p>
 
             <p className="text-gray-500 leading-relaxed">
-              A través del Método DAPA,
-              propone una forma más humana y estratégica de entender
-              la relación entre dinero, decisiones y estilo de vida.
+              Esa búsqueda dio origen al Método DAPA:
+              una forma distinta de entender el dinero desde la claridad,
+              la estructura y el diseño consciente de vida.
             </p>
 
           </motion.div>
@@ -81,7 +86,7 @@ export default function AboutSection() {
 
               <p className="text-gray-500 leading-relaxed">
                 El dinero no organiza una vida por sí solo.
-                El dinero amplifica la estructura que ya existe detrás.
+                Amplifica la estructura que ya existe detrás de cada decisión.
               </p>
 
             </div>
@@ -94,7 +99,7 @@ export default function AboutSection() {
 
               <p className="text-gray-500 leading-relaxed">
                 Finanzas personales desde la claridad,
-                la estabilidad emocional y la coherencia financiera.
+                la estabilidad mental y la coherencia estructural.
               </p>
 
             </div>
@@ -107,7 +112,7 @@ export default function AboutSection() {
 
               <p className="text-gray-500 leading-relaxed">
                 Ayudar a las personas a construir estructuras financieras
-                sostenibles alineadas con la vida que desean vivir.
+                más sostenibles, humanas y alineadas con la vida que desean vivir.
               </p>
 
             </div>

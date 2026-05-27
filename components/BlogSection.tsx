@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const articles = [
   {
-    title: "El problema financiero rara vez es solo matemático.",
+    title: "El problema financiero no es matemático.",
     description:
       "Por qué muchas personas siguen sintiendo fragilidad financiera incluso aumentando sus ingresos.",
     slug: "problema-financiero-no-es-matematico",

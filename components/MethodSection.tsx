@@ -19,7 +19,7 @@ const steps = [
     letter: "P",
     title: "Proyección",
     description:
-      "Diseñar conscientemente el estilo de vida que se desea construir.",
+      "Diseñar conscientemente el estilo de vida que se desea construir y el plan financiero para sostenerla.",
   },
   {
     letter: "A",
