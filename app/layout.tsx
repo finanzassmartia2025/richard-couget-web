@@ -36,7 +36,16 @@ export const metadata = {
     siteName: "Richard Couget",
     locale: "es_ES",
     type: "website",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+       alt: "Richard Couget | Método DAPA",
+      },
+    ],
   },
+
 };
 
 export default function RootLayout({
