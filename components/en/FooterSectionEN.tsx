@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { supabase } from "@/lib/supabase";
 
-export default function FooterSection() {
+export default function FooterSectionEN() {
 
   const [email, setEmail] = useState("");
   const [loading, setLoading] = useState(false);
@@ -15,7 +15,7 @@ export default function FooterSection() {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     if (!emailRegex.test(email)) {
-      setMessage("Por favor ingresa un correo válido.");
+      setMessage("Please enter a valid email address.");
       return;
     }
 
@@ -26,9 +26,9 @@ export default function FooterSection() {
       .insert([{ email }]);
 
     if (error) {
-      setMessage("Ocurrió un error. Inténtalo nuevamente.");
+      setMessage("An error occurred. Please try again.");
     } else {
-      setMessage("¡Suscripción completada!");
+      setMessage("Subscription completed successfully!");
       setEmail("");
     }
 
@@ -50,25 +50,26 @@ export default function FooterSection() {
         >
 
           <p className="text-[#C6A972] uppercase tracking-[0.3em] text-sm mb-6">
-            Newsletter DAPA
+            DAPA Newsletter
           </p>
 
           <h2 className="text-4xl md:text-6xl font-light leading-tight mb-10">
-            Reflexiones sobre claridad financiera
+            Reflections on financial clarity
             <br />
-            y estabilidad sostenible.
+            and sustainable stability.
           </h2>
 
           <p className="text-gray-500 max-w-2xl mx-auto text-lg leading-relaxed mb-12">
-            Suscríbete para recibir ideas, análisis y perspectivas
-            sobre finanzas personales, estructura financiera y diseño consciente.
+            Subscribe to receive ideas, analysis and perspectives
+            on personal finance, financial structure
+            and conscious life design.
           </p>
 
           <div className="max-w-2xl mx-auto flex flex-col sm:flex-row gap-4">
 
             <input
               type="email"
-              placeholder="Tu correo electrónico"
+              placeholder="Your email address"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               className="flex-1 bg-black border border-white/10 rounded-full px-6 py-4 text-white outline-none"
@@ -79,7 +80,7 @@ export default function FooterSection() {
               disabled={loading}
               className="bg-[#C6A972] text-black px-8 py-4 rounded-full font-medium hover:opacity-90 transition disabled:opacity-50"
             >
-              {loading ? "Procesando..." : "Suscribirme"}
+              {loading ? "Processing..." : "Subscribe"}
             </button>
 
           </div>
@@ -95,7 +96,7 @@ export default function FooterSection() {
         {/* FOOTER */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-16 border-t border-white/5 pt-16">
 
-          {/* MARCA */}
+          {/* BRAND */}
           <div>
 
             <h3 className="text-2xl font-light mb-6">
@@ -103,36 +104,36 @@ export default function FooterSection() {
             </h3>
 
             <p className="text-gray-500 leading-relaxed">
-              Método DAPA —
-              Finanzas personales desde la estructura,
-              la claridad y el diseño consciente.
+              Method DAPA —
+              Personal finance through structure,
+              clarity and conscious life design.
             </p>
 
           </div>
 
-          {/* NAVEGACIÓN */}
+          {/* NAVIGATION */}
           <div>
 
             <h4 className="text-white mb-6 uppercase tracking-[0.2em] text-sm">
-              Navegación
+              Navigation
             </h4>
 
             <div className="flex flex-col gap-4 text-gray-500">
 
               <a href="#home" className="hover:text-white transition">
-                Inicio
+                Home
               </a>
 
               <a href="#about" className="hover:text-white transition">
-                Sobre mí
+                About
               </a>
 
               <a href="#method" className="hover:text-white transition">
-                Método DAPA
+                Method DAPA
               </a>
 
               <a href="#book" className="hover:text-white transition">
-                Libro
+                Book
               </a>
 
               <a href="#app" className="hover:text-white transition">
@@ -147,11 +148,11 @@ export default function FooterSection() {
 
           </div>
 
-          {/* REDES */}
+          {/* CONTACT & SOCIAL */}
           <div>
 
             <h4 className="text-white mb-6 uppercase tracking-[0.2em] text-sm">
-              Contacto & Redes
+              Contact & Social
             </h4>
 
             <div className="flex flex-col gap-4 text-gray-500">
@@ -160,7 +161,7 @@ export default function FooterSection() {
                 href="mailto:finanzassmartia2025@gmail.com"
                 className="hover:text-white transition"
               >
-                Correo
+                Email
               </a>
 
               <a
@@ -204,7 +205,7 @@ export default function FooterSection() {
         {/* COPYRIGHT */}
         <div className="border-t border-white/5 mt-16 pt-8 text-gray-600 text-sm text-center">
 
-          © 2026 Richard Couget | Método DAPA. Todos los derechos reservados.
+          © 2026 Richard Couget | Method DAPA. All rights reserved.
 
         </div>
 

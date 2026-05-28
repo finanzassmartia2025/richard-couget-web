@@ -45,6 +45,27 @@ export default function Home() {
               Blog
             </a>
 
+            {/* SELECTOR IDIOMA */}
+            <div className="flex items-center gap-3 ml-6 text-xs tracking-[0.25em] uppercase">
+
+              <a
+                href="/"
+                className="text-white hover:text-[#C6A972] transition"
+              >
+                ES
+              </a>
+
+              <span className="text-white/20">|</span>
+
+              <a
+                href="/en"
+                className="text-white/50 hover:text-[#C6A972] transition"
+              >
+                EN
+              </a>
+
+            </div>
+
           </nav>
 
         </div>

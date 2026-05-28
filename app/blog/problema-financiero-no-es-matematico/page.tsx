@@ -8,7 +8,7 @@ export default function ArticlePage() {
 
         {/* VOLVER */}
         <Link
-          href="/"
+          href="/#blog"
           className="text-[#C6A972] text-sm tracking-[0.2em] uppercase hover:opacity-70 transition"
         >
           ← Volver

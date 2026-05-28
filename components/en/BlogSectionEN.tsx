@@ -5,37 +5,37 @@ import { motion } from "framer-motion";
 
 const articles = [
   {
-    title: "El problema financiero no es matemático",
+    title: "The Financial Problem Is Not Mathematical",
     description:
-      "La mayoría de los problemas financieros modernos no nacen únicamente de la falta de información.",
-    slug: "problema-financiero-no-es-matematico",
+      "Most modern financial problems are not born solely from a lack of information.",
+    slug: "the-financial-problem-is-not-mathematical",
   },
 
   {
-    title: "Primero diseñamos la vida. Después el sistema financiero.",
+    title: "First We Design Life. Then the Financial System.",
     description:
-      "La estabilidad financiera comienza mucho antes del ahorro o la inversión.",
-    slug: "primero-la-vida-despues-el-sistema-financiero",
-  },
-
-  {
-    title:
-      "Administrar dinero no es lo mismo que construir una estructura financiera",
-    description:
-      "El dinero debe responder a una lógica alineada con la vida que deseas construir.",
-    slug: "administrar-dinero-no-es-estructura-financiera",
+      "Financial stability begins long before saving or investing.",
+    slug: "first-life-then-the-financial-system",
   },
 
   {
     title:
-      "Cuando todo depende de que nada salga mal",
+      "Managing Money Is Not the Same as Building a Financial Structure",
     description:
-      "La verdadera estabilidad financiera depende de qué tan resistente es tu estructura.",
-    slug: "cuando-todo-depende-de-que-nada-salga-mal",
+      "Money should respond to a logic aligned with the life you want to build.",
+    slug: "managing-money-is-not-building-a-financial-structure",
+  },
+
+  {
+    title:
+      "When Everything Depends on Nothing Going Wrong",
+    description:
+      "True financial stability depends on how resilient your structure really is.",
+    slug: "when-everything-depends-on-nothing-going-wrong",
   },
 ];
 
-export default function BlogSection() {
+export default function BlogSectionEN() {
   return (
     <section
       id="blog"
@@ -44,7 +44,7 @@ export default function BlogSection() {
 
       <div className="max-w-7xl mx-auto">
 
-        {/* TITULO */}
+        {/* TITLE */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -54,13 +54,13 @@ export default function BlogSection() {
         >
 
           <p className="text-[#C6A972] uppercase tracking-[0.3em] text-sm mb-6">
-            Artículos
+            Articles
           </p>
 
           <h2 className="text-4xl md:text-6xl font-light leading-tight max-w-4xl">
-            Ideas sobre estructura,
+            Ideas about structure,
             <br />
-            claridad y estabilidad financiera.
+            clarity and financial stability.
           </h2>
 
         </motion.div>
@@ -78,14 +78,14 @@ export default function BlogSection() {
               viewport={{ once: true }}
             >
 
-              <Link href={`/blog/${article.slug}`}>
+              <Link href={`/en/blog/${article.slug}`}>
 
                 <div className="group border border-white/10 rounded-3xl p-10 bg-white/[0.02] backdrop-blur-sm hover:border-[#C6A972]/40 hover:bg-white/[0.04] transition duration-500 h-full flex flex-col justify-between">
 
                   <div>
 
                     <p className="text-[#C6A972] text-sm tracking-[0.2em] uppercase mb-6">
-                      Método DAPA
+                      Method DAPA
                     </p>
 
                     <h3 className="text-3xl font-light leading-tight mb-6 group-hover:text-[#C6A972] transition">
@@ -105,7 +105,7 @@ export default function BlogSection() {
                   <div className="mt-12">
 
                     <span className="text-sm tracking-[0.2em] uppercase text-white/60 group-hover:text-[#C6A972] transition">
-                      Leer artículo →
+                      Read article →
                     </span>
 
                   </div>
