@@ -6,7 +6,7 @@ export default function HeroSectionEN() {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center px-8 pt-32"
+      className="min-h-screen flex items-center justify-center px-8 pt-44 md:pt-32"
     >
 
       <div className="max-w-7xl w-full grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
