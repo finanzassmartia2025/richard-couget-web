@@ -57,7 +57,7 @@ export default function HeroSection() {
                 href="#app"
                 className="border border-white/20 px-8 py-4 rounded-full text-sm tracking-wide hover:bg-white hover:text-black transition"
               >
-              Descargar app
+              Descargar app gratis
               </a>
             </motion.button>
 
