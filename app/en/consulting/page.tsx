@@ -56,6 +56,14 @@ export default function ConsultoriaPage() {
 
           </nav>
 
+                    {/* MOBILE BUTTON */}
+          <button
+            onClick={() => setMenuOpen(!menuOpen)}
+            className="md:hidden text-2xl text-white"
+          >
+            ☰
+          </button>
+
         </div>
 
                 {/* MOBILE MENU */}
