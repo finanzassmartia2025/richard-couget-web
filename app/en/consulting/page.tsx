@@ -73,7 +73,7 @@ export default function ConsultoriaPage() {
 
             <nav className="flex flex-col px-8 py-8 gap-6 text-gray-300">
 
-            <a href="/" className="hover:text-white transition">
+            <a href="/en" className="hover:text-white transition">
               Home
             </a>
 
