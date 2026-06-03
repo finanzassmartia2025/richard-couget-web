@@ -42,7 +42,7 @@ export default function ConsultoriaPage() {
 
             <div className="flex items-center gap-3 ml-6 text-xs tracking-[0.25em] uppercase">
 
-              <a href="/" className="text-white">
+              <a href="/consultoria" className="text-white">
                 ES
               </a>
 
@@ -56,7 +56,7 @@ export default function ConsultoriaPage() {
 
           </nav>
 
-                    {/* MOBILE BUTTON */}
+           {/* MOBILE BUTTON */}
           <button
             onClick={() => setMenuOpen(!menuOpen)}
             className="md:hidden text-2xl text-white"
@@ -89,7 +89,7 @@ export default function ConsultoriaPage() {
               <div className="flex items-center gap-3 pt-4 text-xs tracking-[0.25em] uppercase">
 
                 <a
-                  href="/"
+                  href="/consultoria"
                   className="text-white"
                 >
                   ES
@@ -98,7 +98,7 @@ export default function ConsultoriaPage() {
                 <span className="text-white/20">|</span>
 
                 <a
-                  href="/en"
+                  href="/en/consulting"
                   className="text-white/50"
                 >
                   EN
