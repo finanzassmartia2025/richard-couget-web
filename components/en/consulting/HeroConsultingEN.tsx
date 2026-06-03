@@ -38,7 +38,7 @@ export default function HeroConsultingEN() {
             rel="noopener noreferrer"
             className="bg-[#C6A972] text-black px-10 py-5 rounded-full font-medium hover:opacity-90 transition"
           >
-            Book an Initial Consultation
+            Request a DAPA Financial Assessment
           </a>
 
         </motion.div>

@@ -52,7 +52,7 @@ export default function HeroConsultoria() {
          rel="noopener noreferrer"
          className="bg-[#C6A972] text-black px-8 py-4 rounded-full font-medium hover:opacity-90 transition"
         >
-         Solicitar una consulta inicial
+         Solicitar un Diagnóstico Financiero DAPA
         </a>
 
       </div>

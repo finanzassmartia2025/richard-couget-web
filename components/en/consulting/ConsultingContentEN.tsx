@@ -366,7 +366,7 @@ export default function ConsultingContentEN() {
             rel="noopener noreferrer"
             className="bg-[#C6A972] text-black px-10 py-5 rounded-full font-medium hover:opacity-90 transition"
           >
-            Book a Consultation
+            Book my Initial Assessment
           </a>
 
         </div>
