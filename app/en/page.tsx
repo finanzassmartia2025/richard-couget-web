@@ -54,6 +54,13 @@ export default function EnglishPage() {
               Blog
             </a>
 
+            <a
+              href="/en/consulting"
+              className="bg-[#C6A972] text-black px-5 py-2 rounded-full font-medium hover:opacity-90 transition"
+              >
+                Consulting
+            </a>
+
             {/* LANGUAGE SELECTOR */}
             <div className="flex items-center gap-3 ml-6 text-xs tracking-[0.25em] uppercase">
 
@@ -116,6 +123,13 @@ export default function EnglishPage() {
 
               <a href="#blog" onClick={() => setMenuOpen(false)}>
                 Blog
+              </a>
+
+              <a
+              href="/en/consulting"
+              className="bg-[#C6A972] text-black px-5 py-2 rounded-full font-medium hover:opacity-90 transition"
+              >
+                Consulting
               </a>
 
               <div className="flex items-center gap-3 pt-4 text-xs tracking-[0.25em] uppercase">

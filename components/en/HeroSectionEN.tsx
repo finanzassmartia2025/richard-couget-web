@@ -38,7 +38,7 @@ export default function HeroSectionEN() {
             <motion.button
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.98 }}
-              className="bg-[#C6A972] text-black px-8 py-4 rounded-full font-medium"
+              className="bg-[#C6A972] text-black px-12 py-4 rounded-full font-medium"
             >
 
               <a
@@ -54,17 +54,25 @@ export default function HeroSectionEN() {
             <motion.button
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.98 }}
-              className="border border-white/20 px-8 py-4 rounded-full hover:bg-white hover:text-black transition"
+              className="border border-white/20 px-8 py-4 rounded-full"
             >
 
               <a
-                href="#app"
-                className="border border-white/20 px-8 py-4 rounded-full text-sm tracking-wide hover:bg-white hover:text-black transition"
-              >
+                href="#app">
+
                 Download App FREE
               </a>
-
             </motion.button>
+
+            <motion.button
+              whileHover={{ scale: 1.03 }}
+              whileTap={{ scale: 0.98 }}
+              className="bg-white text-black px-12 py-4 rounded-full font-medium"
+              >
+                <a href="/en/consulting">
+                DAPA Consulting
+                </a>
+              </motion.button>
 
           </div>
 

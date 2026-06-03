@@ -42,7 +42,7 @@ export default function HeroSection() {
               <a
                 href="https://www.amazon.com/dp/B0GT4VRYXX"
                 target="_blank"
-                className="bg-[#C6A972] text-black px-8 py-4 rounded-full text-sm tracking-wide hover:opacity-90 transition"
+                className="bg-[#C6A972] text-black px-10 py-4 rounded-full text-sm tracking-wide hover:opacity-90 transition"
               >
               Comprar libro
               </a>
@@ -51,13 +51,22 @@ export default function HeroSection() {
             <motion.button
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.98 }}
-              className="border border-white/20 px-8 py-4 rounded-full hover:bg-white hover:text-black transition"
+              className="border border-white/20 px-8 py-4 rounded-full"
             >
               <a
                 href="#app"
-                className="border border-white/20 px-8 py-4 rounded-full text-sm tracking-wide hover:bg-white hover:text-black transition"
               >
               Descargar app GRATIS
+              </a>
+            </motion.button>
+
+            <motion.button
+              whileHover={{ scale: 1.03 }}
+              whileTap={{ scale: 0.98 }}
+              className="bg-white text-black px-12 py-4 rounded-full font-medium"
+              >
+              <a href="/consultoria">
+               Consultoría DAPA
               </a>
             </motion.button>
 

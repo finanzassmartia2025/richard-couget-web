@@ -54,6 +54,10 @@ export default function Home() {
               Blog
             </a>
 
+            <a href="/consultoria" className="bg-[#C6A972] text-black px-5 py-2 rounded-full font-medium hover:opacity-90 transition">
+               Consultoría DAPA
+            </a>
+
             {/* SELECTOR IDIOMA */}
             <div className="flex items-center gap-3 ml-6 text-xs tracking-[0.25em] uppercase">
 
@@ -116,6 +120,10 @@ export default function Home() {
 
               <a href="#blog" onClick={() => setMenuOpen(false)}>
                 Blog
+              </a>
+
+              <a href="/consultoria" className="bg-[#C6A972] text-black px-5 py-2 rounded-full font-medium hover:opacity-90 transition">
+                Consultoría DAPA
               </a>
 
               <div className="flex items-center gap-3 pt-4 text-xs tracking-[0.25em] uppercase">
