@@ -1,7 +1,14 @@
+"use client";
+
+import { useState } from "react";
+
 import HeroConsultingEN from "@/components/en/consulting/HeroConsultingEN";
 import ConsultingContentEN from "@/components/en/consulting/ConsultingContentEN";
 
 export default function ConsultoriaPage() {
+
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <main className="bg-[#0B0B0B] text-white min-h-screen">
 
@@ -50,6 +57,52 @@ export default function ConsultoriaPage() {
           </nav>
 
         </div>
+
+                {/* MOBILE MENU */}
+        {menuOpen && (
+
+          <div className="md:hidden border-t border-white/5 bg-black/95 backdrop-blur-xl">
+
+            <nav className="flex flex-col px-8 py-8 gap-6 text-gray-300">
+
+            <a href="/" className="hover:text-white transition">
+              Home
+            </a>
+
+            <a
+              href="https://calendly.com/finanzassmartia2025/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#C6A972]"
+            >
+              Book a Call
+            </a>
+
+              <div className="flex items-center gap-3 pt-4 text-xs tracking-[0.25em] uppercase">
+
+                <a
+                  href="/"
+                  className="text-white"
+                >
+                  ES
+                </a>
+
+                <span className="text-white/20">|</span>
+
+                <a
+                  href="/en"
+                  className="text-white/50"
+                >
+                  EN
+                </a>
+
+              </div>
+
+            </nav>
+
+          </div>
+
+        )}
 
       </header>
 
